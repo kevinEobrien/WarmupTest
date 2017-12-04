@@ -1,10 +1,8 @@
-var assert= require("assert");
-var test-warmup = require("../test-warmup")
+var assert = require("assert");
+var app = require("../app.js");
 
-describe('saysHello', function() {
-    it('should ask user for name and say hello', function() {
-      assert.equal("Hello" + test-warmup.name);
-    });
+describe("#saysHello", function() {
+  it("should say hello", function() {
+    assert.equal(app.saysHello(), ("Hello"));
   });
-
-module.exports = "saysHello"
+});
